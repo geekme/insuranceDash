@@ -1,0 +1,554 @@
+/*
+    Insurance Dashboard
+    @Author Munsif Mulla, munsifmulla@gmail.com
+    Date Started 17-12-2013
+*/
+
+/*GENERIC CSS*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans";
+}
+html{
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+}
+body{
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+    background: #dfdfdf;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*Drop Downs*/
+.dropDown{
+    width: 220px;
+    display: inline-block;
+    border: 1px solid #a6a6a6;
+    font-size: 18px;
+}
+.dropDown .selected{
+    text-align: left;
+    padding: 8px 12px;
+    background: #f0f0f0;
+    color: #a6a6a6;
+}
+.dropDown .selected .item{
+    width: 88%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.dropDown .selected .dropArrow{
+    width: 8%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.dropDown ul{
+    list-style: none;
+    list-style-position: inside;
+    position: absolute;
+    width: inherit;
+    text-align: left;
+    display: none;
+}
+.dropDown ul li{
+    padding: 10px;
+    background: #c3c3c3;
+    color: #8a8a8a;
+    border-bottom: 1px solid #afafaf;
+    cursor: pointer;
+}
+.dropDown ul li:hover{
+    padding: 10px;
+    background: #959595;
+    color: #d9d9d9;
+}
+
+/*Main CSS*/
+#mainWrapper{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#mainWrapper .header {
+    background: none repeat scroll 0 0 #3498DB;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3) inset;
+    padding: 10px 0;
+}
+#mainWrapper .header .content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#mainWrapper .header .content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#mainWrapper .header .content .logo{
+    width: 49%;
+    display: inline-block;
+}
+#mainWrapper .header .content .logo .image{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .header .content .logo .title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+/*Insuranec Selector*/
+#mainWrapper .header .content .insuranceSelector{
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    font-size: 14px;
+}
+#mainWrapper .header .content .insuranceSelector .selected{
+    width: 110px;
+    padding: 5px 7px;
+    color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+}
+#mainWrapper .header .content .insuranceSelector .selected span {
+    background: url("../images/whiteDrop_06.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    vertical-align: middle;
+    width: 16px;
+}
+#mainWrapper .header .content .insuranceSelector ul {
+    list-style: none;
+    list-style-position: inside;
+    position: absolute;
+    text-align: left;
+    right:0px;
+    width: 125px;
+    display: none;
+}
+#mainWrapper .header .content .insuranceSelector ul li{
+    padding: 6px 5px;
+    color: #8a8a8a;
+    border-bottom: 1px solid #c3c3c3;
+    background: #dfdfdf;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .header .content .insuranceSelector ul li:hover{
+    background: #afafaf;
+    color: #e8e8e8;
+}
+
+/*Main Container CSS*/
+#mainWrapper .mainContainer{
+    width: 1200px;
+    background: #dfdfdf;
+    margin: 0 auto;
+    font-size: 0px;
+    height: 100%;
+}
+/*Middle Section CSS*/
+#mainWrapper .mainContainer .sectionMiddle{
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    min-height: inherit;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+}
+#mainWrapper .mainContainer .sectionMiddle .addDrop{
+    text-align: right;
+    font-size: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#mainWrapper .mainContainer .sectionMiddle .addDrop .dropDown{
+    width: 300px;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .addDrop .addButton{
+    width: 100px;
+    background: #3498DB;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #3498DB;
+    display: inline-block;
+    vertical-align: top;
+    cursor:pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionMiddle .addDrop .addButton:hover{
+    background: #2c78ae;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .filters{
+    background: #ffffff;
+    text-align:center ;
+    margin-top: 20px;
+    border-bottom: 1px solid #b6b6b6;
+}
+#mainWrapper .mainContainer .sectionMiddle .filters .dropDown{
+    margin: 20px 8px;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .selection{
+    font-size: 0px;
+    background: #ececec;
+    padding: 7px 20px;
+}
+#mainWrapper .mainContainer .sectionMiddle .selection .right{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #717171;
+}
+#mainWrapper .mainContainer .sectionMiddle .selection .right div{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .mainContainer .sectionMiddle .selection .right div.selectAll{
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+}
+#mainWrapper .mainContainer .sectionMiddle .selection .left{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    text-align: right;
+    color: #409ddc;
+    font-weight: bold;
+}
+#mainWrapper .mainContainer .sectionMiddle .selection .left a{
+    text-decoration: none;
+    color: #409ddc;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .profileList{
+    background: #ffffff;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile{
+    background: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #808080;
+    position: relative;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile:last-of-type{
+    border-bottom: none;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileImage{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileImage .profileCheck{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    bottom: 5px;
+    border: 1px solid #959595;
+    background: #ffffff;
+    cursor: pointer;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails{
+    display: inline-block;
+    vertical-align: top;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails p{
+    margin: 3px 7px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .profileName{
+    font-size: 20px;
+    font-weight: 600;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .insNum{
+    padding: 5px 10px;
+    background: #fff57f;
+    font-size: 17px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .carModel{
+    color: #3498DB;
+    font-size: 17px;
+    font-weight: 600;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .profilePeriod{
+    border-top: 1px solid #808080;
+    font-size: 17px;
+    font-weight: 500;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .profilePeriod p:first-of-type{
+    font-weight: 600;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight{
+    display: inline-block;
+    vertical-align: top;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .pointBox{
+    display: inline-block;
+    vertical-align: top;
+    background: #82cf34;
+    color: #ffffff;
+    text-align: center;
+    padding: 9px 26px;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .pointBox:hover{
+    background: #6db32e;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .pointBox p{
+    font-size: 39px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .buttonHolder{
+    display: inline-block;
+    vertical-align: top;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .buttonHolder .button{
+    background: #3498DB;
+    color: #ffffff;
+    padding: 9px 20px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .buttonHolder .button:hover{
+    background: #2c78ae;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .buttonHolder .button:last-of-type{
+    margin-bottom: 0px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .avgScore{
+
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .avgScore .score{
+    display: inline-block;
+    vertical-align: middle;
+    color: #82cf34;
+    font-size: 46px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .avgScore .title{
+    width: 160px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileScreen {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    height: 100%;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileScreen .screenButton {
+    background: none repeat scroll 0 0 #BFBFBF;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 8.7%;
+    padding: 10px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 30%;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileScreen .screenButton:hover{
+    background: none repeat scroll 0 0 #9a9a9a;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .actions {
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right:20px;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .actions a{
+    text-decoration:none ;
+    color: #7d7d7d;
+    margin: 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .pagination{
+    text-align:center ;
+    background: #ffffff;
+    padding: 10px 0px;
+}
+#mainWrapper .mainContainer .sectionMiddle .pagination a{
+    display: inline-block;
+    padding: 5px 11px;
+    color: #808080;
+    text-decoration: none;
+    font-size: 15px;
+}
+#mainWrapper .mainContainer .sectionMiddle .pagination a:hover{
+    border-radius: 50%;
+    background: #3498DB;
+    color: #ffffff;
+}
+#mainWrapper .mainContainer .sectionMiddle .pagination a.hover{
+    border-radius: 50%;
+    background: #3498DB;
+    color: #ffffff;
+}
+/*Left Section*/
+#mainWrapper .mainContainer .sectionLeft{
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    height: inherit;
+    font-size: 14px;
+}
+#mainWrapper .mainContainer .section{
+    font-size: 18px;
+}
+#mainWrapper .mainContainer .section .tab {
+    color: #2F2F2F;
+    cursor: pointer;
+    height: 63px;
+    border-bottom: 1px solid #808080;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .section .tab:first-of-type {
+    margin-top: 20px;
+}
+#mainWrapper .mainContainer .section .tab:last-of-type {
+    border-bottom: none;
+}
+#mainWrapper .mainContainer .section .tab:hover{
+    background: #53be12;
+    color: #ffffff;
+}
+#mainWrapper .mainContainer .section .tab.hover{
+    background: #53be12;
+    color: #ffffff;
+}
+#mainWrapper .mainContainer .section .tab .content {
+    display: table-cell;
+    font-size: 18px;
+    height: 60px;
+    padding-right: 20px;
+    padding-left: 60px;
+    vertical-align: middle;
+}
+#mainWrapper .mainContainer .section .tab .content span{
+}
+#mainWrapper .mainContainer .section .tab .content span.red{
+    font-weight: bold;
+    color: #f00000;
+}
+
+/*Right Section*/
+
+#mainWrapper .mainContainer .sectionRight{
+    width: 228px;
+    display: inline-block;
+    vertical-align: top;
+    height: inherit;
+}
+#mainWrapper .mainContainer .sectionRight .points{
+    margin: 0px 8px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+#mainWrapper .mainContainer .sectionRight .points .headers{
+    padding: 8px 15px;
+    color: #2f2f2f;
+}
+#mainWrapper .mainContainer .sectionRight .points .headers img {
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin-top: 2px;
+    width: 20px;
+}
+#mainWrapper .mainContainer .sectionRight .points .content .distance{
+    padding: 8px 15px;
+    background: #ffffff;
+    color: #2f2f2f;
+}
+#mainWrapper .mainContainer .sectionRight .points .content .pnts{
+    padding: 8px 15px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space: nowrap;
+    background: #b8b8b8;
+    color: #ffffff;
+}
+#mainWrapper .mainContainer .sectionRight .addNew{
+    background: #3498DB;
+    color: #ffffff;
+    padding: 7px 0px;
+    text-align: center;
+    cursor: pointer;
+    margin: 8px ;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionRight .addNew:hover{
+    background: #2c78ae;
+}
