@@ -53,13 +53,15 @@ body{
     vertical-align: middle;
     text-align: left;
 }
-.dropDown ul{
-    list-style: none;
-    list-style-position: inside;
-    position: absolute;
-    width: inherit;
-    text-align: left;
+.dropDown ul {
+    border: 1px solid #A7A7A7;
     display: none;
+    list-style: none inside none;
+    margin-left: -1px;
+    position: absolute;
+    text-align: left;
+    width: inherit;
+    z-index: 1;
 }
 .dropDown ul li{
     padding: 10px;
@@ -562,6 +564,7 @@ body{
     left: 0;
     background: rgba(255,255,255,0.8);
     z-index: 100;
+    display: none;
 }
 
 /*Pop Ups CSS*/
@@ -580,8 +583,8 @@ body{
     display: none;
 }
 /*Pop Ups CSS*/
-.notification.claims{
-    display: block;
+.notification.benefits{
+    /*display: block;*/
 }
 .notification.claims{
     margin-top: -280px;

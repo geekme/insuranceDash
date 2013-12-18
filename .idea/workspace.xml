@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/generic.css" afterPath="$PROJECT_DIR$/assets/styles/generic.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387259484293" ignored="false" />
-    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387354139109" ignored="false" />
-    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387354514961" ignored="false" />
+    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387370356187" ignored="false" />
+    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387361844676" ignored="false" />
+    <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387370477000" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +35,47 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="733" column="41" selection-start="27465" selection-end="27465" vertical-scroll-proportion="-6.45098">
+            <state line="147" column="68" selection-start="5019" selection-end="5019" vertical-scroll-proportion="-3.3137255">
               <folding>
+                <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#4;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#2;tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="54" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.689781">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generic.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="737" column="20" selection-start="18109" selection-end="18109" vertical-scroll-proportion="0.7779851">
+            <state line="133" column="19" selection-start="2530" selection-end="2533" vertical-scroll-proportion="-7.12">
               <folding />
             </state>
           </provider>
@@ -72,8 +99,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/styles/generic.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/scripts/script.js" />
       </list>
     </option>
   </component>
@@ -160,6 +188,24 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insuranceDash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insuranceDash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -182,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -265,24 +311,46 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="19" selection-start="2530" selection-end="2533" vertical-scroll-proportion="-7.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="733" column="41" selection-start="27465" selection-end="27465" vertical-scroll-proportion="-6.45098">
+        <state line="147" column="68" selection-start="5019" selection-end="5019" vertical-scroll-proportion="-3.3137255">
           <folding>
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#4;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#5;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#2;tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#6;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="737" column="20" selection-start="18109" selection-end="18109" vertical-scroll-proportion="0.7779851">
-          <folding />
+        <state line="84" column="54" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.689781">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

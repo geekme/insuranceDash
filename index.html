@@ -37,7 +37,7 @@
     <div class = "mainContainer">
         <!--Left Section-->
         <div class = "section sectionLeft">
-            <div class = "tab">
+            <div class = "tab" data-type = "button" data-button_type = "notif">
                 <div class = "content">
                     Notification <span class = "red">(12)</span>
                 </div>
@@ -145,8 +145,8 @@
 
             <div class = "selection">
                 <div class = "right">
-                    <div class = "selectAll"></div>
-                    <div class = "selectAllText">Select All</div>
+                    <div class = "selectAll" data-status="unchecked"></div>
+                    <div class = "selectAllText" >Select All</div>
                 </div>
 
                 <div class = "left">
@@ -159,7 +159,7 @@
                     <div class = "profileLeft">
                         <div class = "profileImage">
                             <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck"></div>
+                            <div class = "profileCheck" data-status="unchecked"></div>
                         </div>
 
                         <div class = "profileDetails">
@@ -185,10 +185,10 @@
                             <p>24</p>
                         </div>
                         <div class = "buttonHolder">
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "benefits">
                                 Add Bonus/Benefit
                             </div>
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "claims">
                                 View claim History
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                     <div class = "profileLeft">
                         <div class = "profileImage">
                             <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck"></div>
+                            <div class = "profileCheck" data-status="unchecked"></div>
                         </div>
 
                         <div class = "profileDetails">
@@ -230,10 +230,10 @@
                             <p>24</p>
                         </div>
                         <div class = "buttonHolder">
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "benefits">
                                 Add Bonus/Benefit
                             </div>
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "claims">
                                 View claim History
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                     <div class = "profileLeft">
                         <div class = "profileImage">
                             <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck"></div>
+                            <div class = "profileCheck" data-status="unchecked"></div>
                         </div>
 
                         <div class = "profileDetails">
@@ -288,10 +288,10 @@
                             <p>24</p>
                         </div>
                         <div class = "buttonHolder">
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "benefits">
                                 Add Bonus/Benefit
                             </div>
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "claims">
                                 View claim History
                             </div>
                         </div>
@@ -307,7 +307,7 @@
                     <div class = "profileLeft">
                         <div class = "profileImage">
                             <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck"></div>
+                            <div class = "profileCheck" data-status="unchecked"></div>
                         </div>
 
                         <div class = "profileDetails">
@@ -333,10 +333,10 @@
                             <p>24</p>
                         </div>
                         <div class = "buttonHolder">
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "benefits">
                                 Add Bonus/Benefit
                             </div>
-                            <div class = "button">
+                            <div class = "button" data-type = "button" data-button_type = "claims">
                                 View claim History
                             </div>
                         </div>
@@ -385,7 +385,7 @@
             <div class = "points">
                 <div class = "headers">
                     Notifications 1
-                    <img src="assets/images/settingsGear_08.png" alt=""/>
+                    <img src="assets/images/settingsGear_08.png" data-type = "button" data-button_type = "auto" alt=""/>
                 </div>
                 <div class = "content">
                     <div class = "distance">
@@ -400,7 +400,7 @@
             <div class = "points">
                 <div class = "headers">
                     Notifications 2
-                    <img src="assets/images/settingsGear_08.png" alt=""/>
+                    <img src="assets/images/settingsGear_08.png" data-type = "button" data-button_type = "auto" alt=""/>
                 </div>
                 <div class = "content">
                     <div class = "distance">
@@ -424,7 +424,7 @@
         <!--Notification 1-->
         <div class = "notification notif">
             <div class = "close">
-                <span>X</span>
+                <span data-type = "close">X</span>
             </div>
             <h3>Notification 1</h3>
             <div class = "whiteDrop">
@@ -512,13 +512,13 @@
 
             <div class = "buttonsHolder">
                 <div class = "button">SAVE</div>
-                <div class = "button">CANCEL</div>
+                <div class = "button" data-type="close">CANCEL</div>
             </div>
         </div>
         <!--Auto 1-->
         <div class = "notification auto">
             <div class = "close">
-                <span>X</span>
+                <span data-type = "close">X</span>
             </div>
             <h3>Add Auto Points 1</h3>
             <div class = "whiteDrop">
@@ -586,33 +586,16 @@
                     </ul>
                 </div>
             </div>
-            <!--<div class = "messageDrop">-->
-                <!--<div class = "dropDown">-->
-                    <!--<div class = "selected">-->
-                        <!--<div class = "item">-->
-                            <!--Message-->
-                        <!--</div>-->
-                        <!--<div class = "dropArrow">-->
-                            <!--<img src="assets/images/grayDrop_08.png" alt=""/>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<ul>-->
-                        <!--<li>Item 1</li>-->
-                        <!--<li>Item 2</li>-->
-                        <!--<li>Item 3</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
 
             <div class = "buttonsHolder">
                 <div class = "button">SAVE</div>
-                <div class = "button">CANCEL</div>
+                <div class = "button" data-type="close">CANCEL</div>
             </div>
         </div>
         <!--Claims-->
         <div class = "notification claims">
             <div class = "close">
-                <span>X</span>
+                <span data-type = "close">X</span>
             </div>
             <h3>Ravinder Kiran Kumar</h3>
             <div class = "proDetails">
@@ -670,13 +653,13 @@
 
             <div class = "buttonsHolder">
                 <div class = "button">SAVE</div>
-                <div class = "button">CANCEL</div>
+                <div class = "button" data-type="close">CANCEL</div>
             </div>
         </div>
         <!--Add Benefits-->
         <div class = "notification benefits">
             <div class = "close">
-                <span>X</span>
+                <span data-type = "close">X</span>
             </div>
             <h3>Ravinder Kiran Kumar</h3>
             <div class = "proDetails">
@@ -736,5 +719,9 @@
         </div>
     </div>
 </div>
+
+<!--Scripts-->
+<script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script type="text/javascript" src = "assets/scripts/script.js"></script>
 </body>
 </html>
