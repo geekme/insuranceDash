@@ -552,3 +552,293 @@ body{
 #mainWrapper .mainContainer .sectionRight .addNew:hover{
     background: #2c78ae;
 }
+
+/*Screen*/
+.mainScreen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+    z-index: 100;
+}
+
+/*Pop Ups CSS*/
+.notification{
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -165px;
+    left: 50%;
+    margin-left: -325px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+    padding: 10px 15px;
+    z-index: 101;
+    display: none;
+}
+/*Pop Ups CSS*/
+.notification.claims{
+    display: block;
+}
+.notification.claims{
+    margin-top: -280px;
+}
+.notification.benefits{
+    margin-top: -250px;
+}
+.notification .close{
+    font-size: 14px;
+    text-align: right;
+}
+.notification .close span{
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+.notification h3{
+    font-size: 24px;
+    border-bottom:1px solid #808080;
+    padding-bottom: 8px;
+    color: #494949;
+}
+.notification.claims h3{
+    font-size: 24px;
+    border-bottom:none;
+    padding-bottom: 8px;
+    color: #494949;
+}
+.notification.benefits h3{
+    font-size: 24px;
+    border-bottom:none;
+    padding-bottom: 8px;
+    color: #494949;
+}
+.notification .proDetails{
+    font-size: 16px;
+}
+.notification .proDetails .insNumber {
+    background: none repeat scroll 0 0 #FFF57F;
+    display: inline-block;
+    margin-right: 2%;
+    padding: 10px;
+    vertical-align: middle;
+    width: 47%;
+}
+.notification .proDetails .insPeriod{
+    width:47% ;
+    display: inline-block;
+    vertical-align: middle;
+}
+.notification .proDetails .carModel{
+    color: #3498DB;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid #808080;
+}
+.notification .proDetails .claimHeader{
+    font-weight: 600;
+    padding: 10px;
+}
+.notification .whiteDrop {
+    border-bottom: 1px solid #808080;
+    padding: 4px 0px;
+}
+.notification .grayDrop {
+    background: #777777;
+    border-bottom: 1px solid #808080;
+    padding: 4px 0px;
+}
+.notification .blueDrop {
+    background: #3498DB;
+    border-bottom: 1px solid #808080;
+    padding: 4px 0px;
+}
+.notification .dropDown {
+    border: none;
+    position: relative;
+}
+.notification .dropDown ul{
+    width: 100%;
+}
+
+.notification .whiteDrop .dropDown .selected{
+    background: #ffffff;
+}
+.notification .grayDrop .dropDown .selected{
+    background: transparent;
+}
+.notification .blueDrop .dropDown{
+    width: 100%;
+}
+.notification .blueDrop .dropDown .selected {
+    background: #3498DB;
+    color: #ffffff;
+}
+.notification .whiteDrop .dropDown .selected .item{
+    color: #3498DB;
+    font-weight: 600;
+}
+.notification .grayDrop .dropDown .selected .item{
+    color: #ffffff;
+    font-weight: 600;
+}
+.notification .filters{
+    text-align: center;
+    padding: 13px 0px;
+}
+.notification .filters .dropDown {
+    margin-right: 13px;
+    width: 208px;
+}
+.notification .filters .dropDown:last-of-type {
+    margin-right: 0px;
+}
+.notification .messageDrop{
+    padding-bottom: 15px;
+    position: relative;
+}
+.notification .messageDrop .dropDown{
+    width: 100%;
+}
+.notification .messageDrop .dropDown .selected .item{
+    color: #3498DB;
+    font-weight: 600;
+}
+.notification .messageDrop .dropDown .selected .dropArrow{
+    width: 11.2%;
+    text-align: right;
+}
+.notification .blueDrop .dropDown .selected .dropArrow{
+    width: 11.2%;
+    text-align: right;
+}
+.notification .claimRecords{
+    font-size: 16px;
+}
+.notification .claimRecords ul{
+    list-style-type: none;
+    list-style-position:inside;
+    margin-bottom: 20px;
+}
+.notification.benefits .claimRecords ul{
+    margin-bottom:0px;
+}
+.notification .claimRecords ul li{
+    padding: 10px;
+    border-bottom: 1px solid #a7a7a7;
+}
+.notification .claimRecords ul li.unclaimed img{
+    display: none;
+}
+.notification .claimRecords ul li.unclaimed:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.notification .claimRecords ul li.unclaimed span{
+    color: #3498DB;
+    display: inline-block;
+    margin-left: 10px;
+}
+.notification .claimRecords ul li.addNew{
+    background: #ffffff;
+}
+.notification .claimRecords ul li.addNew input[type="text"]{
+    background: #ffffff;
+    border: none;
+    font-size: 18px;
+    padding: 4px;
+    color: #3498DB;
+    width: 558px;
+}
+.notification .claimRecords ul li.addNew span{
+    background: #ffffff;
+    display: inline-block;
+    border: 2px solid #afafaf;
+    font-size: 16px;
+    padding: 4px 10px;
+    color: #3498DB;
+    cursor: pointer;
+    font-weight: 600;
+}
+.notification .claimRecords ul li.addNew span:hover{
+    background: #f5f5f5;
+}
+.notification .claimRecords ul li.claimed{
+    background: #e3e3e3;
+    cursor: pointer;
+}
+.notification .claimRecords ul li.claimed:hover{
+    background: #c8c8c8;
+}
+.notification .claimRecords ul li.claimed span{
+    color: #afafaf;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.notification .claimRecords ul li:last-of-type{
+    border-bottom: none;
+}
+.notification .claimRecords ul li img{
+    display: inline-block;
+    margin-right: 10px;
+}
+.notification .buttonsHolder{
+    border-top: 1px solid #808080;
+    padding:10px 0px ;
+}
+.notification.benefits .buttonsHolder{
+    border-top: none;
+    padding:0px 0px ;
+}
+.notification .button{
+    width: 49%;
+    margin-right: 2%;
+    background: #3498DB;
+    color: #ffffff;
+    padding: 12px 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.notification .button:hover{
+    background: #2c78ae;
+}
+.notification .button:last-of-type{
+    background: #7d7d7d;
+    margin-right: 0;
+}
+.notification .button:last-of-type:hover{
+    background: #626262;
+}
+
+.notification .button.add{
+    width: 100%;
+    margin-right: 2%;
+    background: #3498DB;
+    color: #ffffff;
+    padding: 12px 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.notification .button.add:hover{
+    background: #2c78ae;
+}
