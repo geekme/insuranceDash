@@ -90,12 +90,41 @@ var fn = {
         });
     },
 
+    switchTab:function(){
+        $('[data-type="tab"]').click(function(){
+            var item = $(this);
+            var type = item.data("tab_type");
+
+            $('.sectionLeft').find('.tab').removeClass('hover');
+            $('.sectionLeft').find(item).addClass('hover');
+            switch(type){
+                case 'notif':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.notifiTab').fadeIn();
+                    break;
+                case 'allinsurance':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.allInsuranceHolders').fadeIn();
+                    break;
+                case 'insuranceexpiry':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.insuranceExpiry').fadeIn();
+                    break;
+                case 'accidents':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.accidents').fadeIn();
+                    break;
+            }
+        });
+    },
+
     execute: function(){
         fn.dropDown();
         fn.showPops();
         fn.closePops();
         fn.singleSelect();
         fn.selectAll();
+        fn.switchTab();
     }
 }
 

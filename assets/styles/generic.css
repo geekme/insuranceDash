@@ -182,6 +182,43 @@ body{
     min-height: inherit;
     box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
 }
+#mainWrapper .mainContainer .sectionMiddle .slide{
+    display: none;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide .notifBar{
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 10px 15px;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide .notifBar.green{
+    background: #59D97A;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide .notifBar.orange{
+    background: #FB6343;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide .notifBar.yellow{
+    background: #fbe41c;
+}
+
+#mainWrapper .mainContainer .sectionMiddle .slide.notifiTab {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    display: block;
+    min-height: inherit;
+    padding-bottom: 10px;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.insuranceExpiry {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    display: none;
+    min-height: inherit;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.accidents {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    display: none;
+    min-height: inherit;
+}
 #mainWrapper .mainContainer .sectionMiddle .addDrop{
     text-align: right;
     font-size: 0px;
@@ -269,6 +306,12 @@ body{
     border-bottom: 1px solid #808080;
     position: relative;
 }
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile.dashed{
+    background: #ffd1c3;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+}
 #mainWrapper .mainContainer .sectionMiddle .profileList .profile:last-of-type{
     border-bottom: none;
 }
@@ -315,6 +358,9 @@ body{
     border-top: 1px solid #808080;
     font-size: 17px;
     font-weight: 500;
+}
+#mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .profilePeriod.nearExpiry{
+    background: #ffd1c3;
 }
 #mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileLeft .profileDetails .profilePeriod p:first-of-type{
     font-weight: 600;
