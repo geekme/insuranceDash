@@ -4,9 +4,19 @@
 
 var fn = {
     dropDown : function(){
-        $('.dropDown').click(function(){
+        $('.dropDown').click(function(e){
             var list = $(this).find('ul');
             (list.css("display") == "none") ? fn.allClose(list) : list.slideUp();
+        });
+
+        $(document).mouseup(function(e){
+            if(e.target === $('.selected')[0]){
+//                alert($(e.currentTarget).attr("class"));
+            }
+            else{
+                $('.dropDown').find('ul').slideUp();
+            }
+            e.stopImmediatePropagation()
         });
 
         $('.dropDown').find('ul li').click(function(){
@@ -22,23 +32,29 @@ var fn = {
     showPops:function(){
         $('[data-type="button"]').click(function(){
             var item = $(this).data("button_type");
-            //On the Screen
-            $('.mainScreen').fadeIn();
             //Check Cases
             switch(item){
                 case 'claims':
+                    //On the Screen
+                    $('.mainScreen').fadeIn();
                     $('.notification').fadeOut();
                     $('.notification.claims').fadeIn();
                     break;
                 case 'benefits':
+                    //On the Screen
+                    $('.mainScreen').fadeIn();
                     $('.notification').fadeOut();
                     $('.notification.benefits').fadeIn();
                     break;
                 case 'notif':
+                    //On the Screen
+                    $('.mainScreen').fadeIn();
                     $('.notification').fadeOut();
                     $('.notification.notif').fadeIn();
                     break;
                 case 'auto':
+                    //On the Screen
+                    $('.mainScreen').fadeIn();
                     $('.notification').fadeOut();
                     $('.notification.auto').fadeIn();
                     break;
@@ -113,6 +129,14 @@ var fn = {
                 case 'accidents':
                     $('.sectionMiddle').find('.slide').fadeOut();
                     $('.sectionMiddle').find('.slide.accidents').fadeIn();
+                    break;
+                case 'allsign':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.appsign').fadeIn();
+                    break;
+                case 'archived':
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.archived').fadeIn();
                     break;
             }
         });

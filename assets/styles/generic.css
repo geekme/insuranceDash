@@ -400,6 +400,7 @@ body{
     padding: 9px 20px;
     margin-bottom: 10px;
     text-align:center;
+    width:159px ;
 }
 #mainWrapper .mainContainer .sectionMiddle .profileList .profile .profileRight .buttonHolder .button:hover{
     background: #2c78ae;
