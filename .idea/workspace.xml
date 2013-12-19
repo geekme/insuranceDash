@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/generic.css" afterPath="$PROJECT_DIR$/assets/styles/generic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/script.js" afterPath="$PROJECT_DIR$/assets/scripts/script.js" />
     </list>
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387259484293" ignored="false" />
-    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387434329482" ignored="false" />
+    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387435727680" ignored="false" />
     <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387435063504" ignored="false" />
     <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387434692405" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,22 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="41" selection-start="1162" selection-end="1173" vertical-scroll-proportion="-2.6666667">
+            <state line="1353" column="68" selection-start="57441" selection-end="57441" vertical-scroll-proportion="0.7263582">
               <folding>
                 <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#3;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#2;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.2.0.3.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="83614" selection-end="83614" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generic.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="18" selection-start="4814" selection-end="4814" vertical-scroll-proportion="0.6492537">
+            <state line="218" column="18" selection-start="4814" selection-end="4814" vertical-scroll-proportion="-13.92">
               <folding />
             </state>
           </provider>
@@ -90,9 +95,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/scripts/script.js" />
         <option value="$PROJECT_DIR$/assets/styles/generic.css" />
+        <option value="$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -302,25 +308,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="41" selection-start="1162" selection-end="1173" vertical-scroll-proportion="-2.6666667">
-          <folding>
-            <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#3;tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="29" selection-start="3585" selection-end="3585" vertical-scroll-proportion="0.0">
@@ -332,8 +319,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="18" selection-start="4814" selection-end="4814" vertical-scroll-proportion="0.6492537">
+        <state line="218" column="18" selection-start="4814" selection-end="4814" vertical-scroll-proportion="-13.92">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="83614" selection-end="83614" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1353" column="68" selection-start="57441" selection-end="57441" vertical-scroll-proportion="0.7263582">
+          <folding>
+            <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
