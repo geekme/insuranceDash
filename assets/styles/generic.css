@@ -54,7 +54,7 @@ body{
     text-align: left;
 }
 .dropDown ul {
-    border: 1px solid #A7A7A7;
+    border: 1px solid #ffffff;
     display: none;
     list-style: none inside none;
     margin-left: -1px;
@@ -65,10 +65,15 @@ body{
 }
 .dropDown ul li{
     padding: 10px;
-    background: #c3c3c3;
-    color: #8a8a8a;
+    background: #ffffff;
+    color: #808080;
     border-bottom: 1px solid #afafaf;
     cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
 }
 .dropDown ul li:hover{
     padding: 10px;
@@ -820,8 +825,17 @@ body{
     background: #e3e3e3;
     cursor: pointer;
 }
+.notification .claimRecords ul li.claimed span.removeItem{
+    color: #f00000;
+    float: right;
+    font-weight: 600;
+    display: none;
+}
 .notification .claimRecords ul li.claimed:hover{
     background: #c8c8c8;
+}
+.notification .claimRecords ul li.claimed:hover .removeItem{
+    display: block;
 }
 .notification .claimRecords ul li.claimed span{
     color: #afafaf;

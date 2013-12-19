@@ -141,6 +141,30 @@ var fn = {
             }
         });
     },
+    addItem:function(){
+        $('.addNew').find('.addButton').click(function(){
+            var textItem = $(this).parent().find('input[type="text"]');
+            var newList = $('<li></li>');
+            newList.addClass("claimed");
+            newList.html(textItem.val());
+            newList.append('<span class = "removeItem">x</span>');
+            if(textItem.val() == ""){
+                textItem.focus();
+                return;
+            }
+            else{
+                newList.insertAfter($(this).parent());
+                textItem.val("");
+                textItem.focus();
+            }
+        });
+    },
+
+    removeItem:function(){
+        $(document).on("click",".removeItem",function(){
+            $(this).parent().remove();
+        });
+    },
 
     execute: function(){
         fn.dropDown();
@@ -149,6 +173,8 @@ var fn = {
         fn.singleSelect();
         fn.selectAll();
         fn.switchTab();
+        fn.addItem();
+        fn.removeItem();
     }
 }
 

@@ -9,9 +9,9 @@
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387437654067" ignored="false" />
-    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387436389406" ignored="false" />
-    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387436460207" ignored="false" />
-    <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387437956069" ignored="false" />
+    <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387451122809" ignored="false" />
+    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387451262302" ignored="false" />
+    <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1387451776356" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1166" column="26" selection-start="50931" selection-end="50931" vertical-scroll-proportion="-0.9019608">
+            <state line="1895" column="86" selection-start="79558" selection-end="79593" vertical-scroll-proportion="-5.5686274">
               <folding>
                 <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -61,7 +61,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="58" selection-start="448" selection-end="448" vertical-scroll-proportion="0.40328467">
+            <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.59671533">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -72,7 +72,7 @@
       <file leaf-file-name="generic.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="402" column="17" selection-start="10364" selection-end="10364" vertical-scroll-proportion="-8.48">
+            <state line="837" column="19" selection-start="20833" selection-end="20833" vertical-scroll-proportion="-13.92">
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js" />
-        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
         <option value="$PROJECT_DIR$/assets/scripts/script.js" />
       </list>
     </option>
@@ -226,8 +226,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -318,16 +318,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2044" column="19" selection-start="36141" selection-end="36141" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="402" column="17" selection-start="10364" selection-end="10364" vertical-scroll-proportion="-8.48">
+        <state line="837" column="19" selection-start="20833" selection-end="20833" vertical-scroll-proportion="-13.92">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1166" column="26" selection-start="50931" selection-end="50931" vertical-scroll-proportion="-0.9019608">
+        <state line="1895" column="86" selection-start="79558" selection-end="79593" vertical-scroll-proportion="-5.5686274">
           <folding>
             <element signature="tag#div#0;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -341,7 +348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="58" selection-start="448" selection-end="448" vertical-scroll-proportion="0.40328467">
+        <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.59671533">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
