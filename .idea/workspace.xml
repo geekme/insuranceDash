@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/generic.css" afterPath="$PROJECT_DIR$/assets/styles/generic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/script.js" afterPath="$PROJECT_DIR$/assets/scripts/script.js" />
     </list>
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.59671533">
+            <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -69,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="generic.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="837" column="19" selection-start="20833" selection-end="20833" vertical-scroll-proportion="-13.92">
+            <state line="197" column="14" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.875">
               <folding />
             </state>
           </provider>
@@ -98,8 +96,8 @@
       <list>
         <option value="$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
         <option value="$PROJECT_DIR$/assets/scripts/script.js" />
+        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
       </list>
     </option>
   </component>
@@ -226,8 +224,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -325,13 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="837" column="19" selection-start="20833" selection-end="20833" vertical-scroll-proportion="-13.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1895" column="86" selection-start="79558" selection-end="79593" vertical-scroll-proportion="-5.5686274">
@@ -348,10 +339,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.59671533">
+        <state line="157" column="33" selection-start="5979" selection-end="5979" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="14" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.875">
+          <folding />
         </state>
       </provider>
     </entry>
