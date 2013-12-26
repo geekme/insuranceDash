@@ -2,36 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/animated-overlay.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_flat_10_000000_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-icons_228ef1_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-icons_ef8c08_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-icons_ffd27a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/images/ui-icons_ffffff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/jquery-1.9.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/jquery-ui-1.10.3.custom.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/generic.css" afterPath="$PROJECT_DIR$/assets/styles/generic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css" afterPath="$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/script.js" afterPath="$PROJECT_DIR$/assets/scripts/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388036926555" ignored="false" />
+    <file path="/Dummy.txt" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388058128886" ignored="false" />
     <file path="/index.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388047488656" ignored="false" />
-    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388047578873" ignored="false" />
-    <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388048007867" ignored="false" />
+    <file path="/generic.css" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388059073783" ignored="false" />
+    <file path="/script.js" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388058740778" ignored="false" />
     <file path="/test.html" changelist="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" time="1388041768945" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2045" column="0" selection-start="56734" selection-end="56734" vertical-scroll-proportion="0.77254903">
+            <state line="2045" column="0" selection-start="56734" selection-end="56734" vertical-scroll-proportion="-7.72549">
               <folding>
                 <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -86,16 +66,25 @@
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="0" selection-start="6857" selection-end="6857" vertical-scroll-proportion="0.0">
+            <state line="178" column="13" selection-start="6550" selection-end="6550" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery-ui-1.10.3.custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="345" column="27" selection-start="7728" selection-end="7733" vertical-scroll-proportion="-80.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generic.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="19" selection-start="5722" selection-end="5722" vertical-scroll-proportion="-7.16">
+            <state line="239" column="23" selection-start="5471" selection-end="5471" vertical-scroll-proportion="0.2705224">
               <folding />
             </state>
           </provider>
@@ -130,9 +119,10 @@
       <list>
         <option value="$PROJECT_DIR$/assets/scripts/jquery.2.0.3.js" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
-        <option value="$PROJECT_DIR$/assets/scripts/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/scripts/script.js" />
+        <option value="$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css" />
+        <option value="$PROJECT_DIR$/assets/styles/generic.css" />
       </list>
     </option>
   </component>
@@ -429,23 +419,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="19" selection-start="5722" selection-end="5722" vertical-scroll-proportion="-7.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="0" selection-start="6857" selection-end="6857" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2045" column="0" selection-start="56734" selection-end="56734" vertical-scroll-proportion="0.77254903">
+        <state line="2045" column="0" selection-start="56734" selection-end="56734" vertical-scroll-proportion="-7.72549">
           <folding>
             <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#3;tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -460,6 +436,27 @@
             <element signature="tag#div#3;tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#4;tag#div#7;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="13" selection-start="6550" selection-end="6550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/jquery-ui-1.10.3.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="27" selection-start="7728" selection-end="7733" vertical-scroll-proportion="-80.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/generic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="23" selection-start="5471" selection-end="5471" vertical-scroll-proportion="0.2705224">
+          <folding />
         </state>
       </provider>
     </entry>

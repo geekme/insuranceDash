@@ -236,6 +236,9 @@ body{
     width: 60%;
     margin: 20px auto;
 }
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slider ui-slider-range{
+    background: #3498DB;
+}
 #mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slideHolder{
     padding: 10px 0px;
     border-bottom: 1px solid #808080;

@@ -172,7 +172,11 @@ var fn = {
         $('.slider').slider({
             range:"min",
             min:0,
-            max:10
+            max:10,
+            slide:function(event, ui){
+                $(this).find('a').html(ui.value)
+//                console.log(ui.value);
+            }
         });
     },
     addSlider:function(){
@@ -186,7 +190,11 @@ var fn = {
             newSlider.slider({
                 range:"min",
                 min:0,
-                max:10
+                max:10,
+                slide:function(event, ui){
+                    $(this).find('a').html(ui.value)
+                    console.log(ui.value);
+                }
             });
 
             $(newSlideHolder).insertBefore(".slideHolder:eq(0)");
