@@ -5,1915 +5,2048 @@
     <title>Insurance Dash</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='assets/styles/jquery-ui-1.10.3.custom.css' rel='stylesheet' type='text/css'>
     <link href='assets/styles/generic.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id = "mainWrapper">
-    <div class=  "header">
-        <div class = "content">
-            <div class = "logo">
-                <div class = "image">
-                    <img src="assets/images/logo_03.png" alt="Logo Image"/>
+<div id="mainWrapper">
+<div class="header">
+    <div class="content">
+        <div class="logo">
+            <div class="image">
+                <img src="assets/images/logo_03.png" alt="Logo Image"/>
+            </div>
+            <div class="title">
+                Insurance Dashboard
+            </div>
+        </div>
+
+        <div class="insuranceSelector">
+            <div class="selected">
+                TATA AIG <span></span>
+            </div>
+            <ul>
+                <li>Max Bupa</li>
+                <li>General</li>
+                <li>Indian</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Main Content-->
+<div class="mainContainer">
+
+<!--Left Section-->
+<div class="section sectionLeft">
+    <div class="tab hover" data-type="tab" data-tab_type="notif">
+        <div class="content">
+            Notification <span class="red">(12)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="allinsurance">
+        <div class="content">
+            All Insurance Holders <span>(1426)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="insuranceexpiry">
+        <div class="content">
+            Insurance Expiry <span>(32)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="accidents">
+        <div class="content">
+            Accidents <span>(4)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="allsign">
+        <div class="content">
+            App Sign-ins<span>(25)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="archived">
+        <div class="content">
+            Archived<span>(16)</span>
+        </div>
+    </div>
+    <div class="tab" data-type="tab" data-tab_type="settings">
+        <div class="content">
+            Settings
+        </div>
+    </div>
+</div>
+
+<!--Middle Section-->
+<div class="section sectionMiddle">
+<div class="slide notifiTab">
+    <div class="notifBar green">
+        You can save fuel by driving at 50kmph
+    </div>
+    <div class="notifBar orange">
+        Consistent incorrect Gear Engagement for more than 2 minutes
+    </div>
+    <div class="notifBar green">
+        Remember smooth driving saves fuel, see the road and maintain momentum.
+    </div>
+    <div class="notifBar yellow">
+        Remember smooth driving saves fuel, see the road and maintain momentum.
+    </div>
+    <div class="notifBar green">
+        You can save fuel by driving at 50kmph
+    </div>
+    <div class="notifBar orange">
+        Consistent incorrect Gear Engagement for more than 2 minutes
+    </div>
+    <div class="notifBar green">
+        You can save fuel by driving at 50kmph
+    </div>
+    <div class="notifBar yellow">
+        Remember smooth driving saves fuel, see the road and maintain momentum.
+    </div>
+    <div class="notifBar yellow">
+        Remember smooth driving saves fuel, see the road and maintain momentum.
+    </div>
+
+    <div class="pagination">
+        <a href="#" class="hover">
+            1
+        </a>
+        <a href="#">
+            2
+        </a>
+    </div>
+</div>
+<div class="slide allInsuranceHolders">
+<div class="addDrop">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Benefits
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="addButton">
+        Add
+    </div>
+</div>
+
+<!--Filters-->
+<div class="filters">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 1
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 2
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 3
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div class="selection">
+    <div class="right">
+        <div class="selectAll" data-status="unchecked"></div>
+        <div class="selectAllText">Select All</div>
+    </div>
+
+    <div class="left">
+        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
+    </div>
+</div>
+
+<div class="profileList">
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
                 </div>
-                <div class = "title">
-                    Insurance Dashboard
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
                 </div>
             </div>
 
-            <div class = "insuranceSelector">
-                <div class = "selected">
-                    TATA AIG <span></span>
-                </div>
-                <ul>
-                    <li>Max Bupa</li>
-                    <li>General</li>
-                    <li>Indian</li>
-                </ul>
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
             </div>
         </div>
     </div>
 
-    <!--Main Content-->
-    <div class = "mainContainer">
-
-        <!--Left Section-->
-        <div class = "section sectionLeft">
-            <div class = "tab hover" data-type = "tab" data-tab_type = "notif">
-                <div class = "content">
-                    Notification <span class = "red">(12)</span>
-                </div>
-            </div>
-            <div class = "tab" data-type = "tab" data-tab_type = "allinsurance">
-                <div class = "content">
-                    All Insurance Holders <span>(1426)</span>
-                </div>
-            </div>
-            <div class = "tab" data-type = "tab" data-tab_type = "insuranceexpiry">
-                <div class = "content">
-                    Insurance Expiry <span>(32)</span>
-                </div>
-            </div>
-            <div class = "tab" data-type = "tab" data-tab_type = "accidents">
-                <div class = "content">
-                    Accidents <span>(4)</span>
-                </div>
-            </div>
-            <div class = "tab" data-type = "tab" data-tab_type = "allsign">
-                <div class = "content">
-                    App Sign-ins<span>(25)</span>
-                </div>
-            </div>
-            <div class = "tab" data-type = "tab" data-tab_type = "archived">
-                <div class = "content">
-                    Archived<span>(16)</span>
-                </div>
-            </div>
-        </div>
-
-        <!--Middle Section-->
-        <div class = "section sectionMiddle">
-            <div class = "slide notifiTab">
-                <div class="notifBar green">
-                    You can save fuel by driving at 50kmph
-                </div>
-                <div class="notifBar orange">
-                    Consistent incorrect Gear Engagement for more than 2 minutes
-                </div>
-                <div class="notifBar green">
-                    Remember smooth driving saves fuel, see the road and maintain momentum.
-                </div>
-                <div class="notifBar yellow">
-                    Remember smooth driving saves fuel, see the road and maintain momentum.
-                </div>
-                <div class="notifBar green">
-                    You can save fuel by driving at 50kmph
-                </div>
-                <div class="notifBar orange">
-                    Consistent incorrect Gear Engagement for more than 2 minutes
-                </div>
-                <div class="notifBar green">
-                    You can save fuel by driving at 50kmph
-                </div>
-                <div class="notifBar yellow">
-                    Remember smooth driving saves fuel, see the road and maintain momentum.
-                </div>
-                <div class="notifBar yellow">
-                    Remember smooth driving saves fuel, see the road and maintain momentum.
-                </div>
-
-                <div class = "pagination">
-                    <a href="#" class = "hover">
-                        1
-                    </a>
-                    <a href="#">
-                        2
-                    </a>
-                </div>
-            </div>
-            <div class = "slide allInsuranceHolders">
-                <div class = "addDrop">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Benefits
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                    <div class = "addButton">
-                        Add
-                    </div>
-                </div>
-
-                <!--Filters-->
-                <div class = "filters">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 1
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 2
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 3
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class = "selection">
-                    <div class = "right">
-                        <div class = "selectAll" data-status="unchecked"></div>
-                        <div class = "selectAllText" >Select All</div>
-                    </div>
-
-                    <div class = "left">
-                        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
-                    </div>
-                </div>
-
-                <div class = "profileList">
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-
-                        <div class = "profileScreen">
-                            <div class = "screenButton">
-                                Dropped from Service
-                            </div>
-
-                            <div class = "actions">
-                                <a href="#" title="Archive">Archive</a>
-                                <a href="#" title="Delete">
-                                    <img src="assets/images/deleteIcon_09.png" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "pagination">
-                    <a href="#" class = "hover">
-                        1
-                    </a>
-                    <a href="#">
-                        2
-                    </a>
-                    <a href="#">
-                        3
-                    </a>
-                    <a href="#">
-                        4
-                    </a>
-                </div>
-            </div>
-            <div class = "slide insuranceExpiry">
-                <div class = "addDrop">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Benefits
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                    <div class = "addButton">
-                        Add
-                    </div>
-                </div>
-
-                <!--Filters-->
-                <div class = "filters">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 1
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 2
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 3
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class = "selection">
-                    <div class = "right">
-                        <div class = "selectAll" data-status="unchecked"></div>
-                        <div class = "selectAllText" >Select All</div>
-                    </div>
-
-                    <div class = "left">
-                        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
-                    </div>
-                </div>
-
-                <div class = "profileList">
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod nearExpiry">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod nearExpiry">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-
-                        <!--<div class = "profileScreen">-->
-                            <!--<div class = "screenButton">-->
-                                <!--Dropped from Service-->
-                            <!--</div>-->
-
-                            <!--<div class = "actions">-->
-                                <!--<a href="#" title="Archive">Archive</a>-->
-                                <!--<a href="#" title="Delete">-->
-                                    <!--<img src="assets/images/deleteIcon_09.png" alt=""/>-->
-                                <!--</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod nearExpiry">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod nearExpiry">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "pagination">
-                    <a href="#" class = "hover">
-                        1
-                    </a>
-                    <a href="#">
-                        2
-                    </a>
-                    <a href="#">
-                        3
-                    </a>
-                    <a href="#">
-                        4
-                    </a>
-                </div>
-            </div>
-            <div class = "slide accidents">
-                <div class = "addDrop">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Benefits
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                    <div class = "addButton">
-                        Add
-                    </div>
-                </div>
-
-                <!--Filters-->
-                <div class = "filters">
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 1
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 2
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-
-                    <div class = "dropDown">
-                        <div class = "selected">
-                            <div class = "item">
-                                Filter 3
-                            </div>
-                            <div class = "dropArrow">
-                                <img src="assets/images/grayDrop_08.png" alt=""/>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class = "selection">
-                    <div class = "right">
-                        <div class = "selectAll" data-status="unchecked"></div>
-                        <div class = "selectAllText" >Select All</div>
-                    </div>
-
-                    <div class = "left">
-                        <!--<a href="#">Reports </a>| <a href="#">Show Driver Trends</a>-->
-                    </div>
-                </div>
-
-                <div class = "profileList">
-                    <div class = "profile dashed">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile dashed">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-
-                        <!--<div class = "profileScreen">-->
-                            <!--<div class = "screenButton">-->
-                                <!--Dropped from Service-->
-                            <!--</div>-->
-
-                            <!--<div class = "actions">-->
-                                <!--<a href="#" title="Archive">Archive</a>-->
-                                <!--<a href="#" title="Delete">-->
-                                    <!--<img src="assets/images/deleteIcon_09.png" alt=""/>-->
-                                <!--</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-
-                    <div class = "profile dashed">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profile dashed">
-                        <div class = "profileLeft">
-                            <div class = "profileImage">
-                                <img src="assets/images/profileImage_09.png" alt=""/>
-                                <div class = "profileCheck" data-status="unchecked"></div>
-                            </div>
-
-                            <div class = "profileDetails">
-                                <p class = "profileName">
-                                    Ravinder Kiran Kumar
-                                </p>
-                                <p class = "insNum">
-                                    <b>Insurance  No:</b>ND347809KH678
-                                </p>
-                                <p class = "carModel">
-                                    Toyota Altis 2010
-                                </p>
-                                <div class = "profilePeriod">
-                                    <p>Insurance Period:</p>
-                                    <p>March 06/2013 - March 05/2014</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class = "profileRight">
-                            <div class = "pointBox">
-                                Points
-                                <p>24</p>
-                            </div>
-                            <div class = "buttonHolder">
-                                <div class = "button" data-type = "button" data-button_type = "benefits">
-                                    Add Bonus/Benefit
-                                </div>
-                                <div class = "button" data-type = "button" data-button_type = "claims">
-                                    View claim History
-                                </div>
-                            </div>
-
-                            <div class = "avgScore">
-                                <div class = "score">06</div>
-                                <div class = "title">Average Driver Score December 2013</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "pagination">
-                    <a href="#" class = "hover">
-                        1
-                    </a>
-                    <a href="#">
-                        2
-                    </a>
-                    <a href="#">
-                        3
-                    </a>
-                    <a href="#">
-                        4
-                    </a>
-                </div>
-            </div>
-            <div class = "slide appsign">
-            <div class = "addDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Benefits
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "addButton">
-                    Add
-                </div>
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
             </div>
 
-            <!--Filters-->
-            <div class = "filters">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 1
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
 
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 2
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
 
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 3
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
 
-            <div class = "selection">
-                <div class = "right">
-                    <div class = "selectAll" data-status="unchecked"></div>
-                    <div class = "selectAllText" >Select All</div>
-                </div>
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
 
-                <div class = "left">
-                    <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
-                </div>
-            </div>
-
-            <div class = "profileList">
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Accept
-                            </div>
-                            <div class = "button" data-type = "button" >
-                                Decline
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Accept
-                            </div>
-                            <div class = "button" data-type = "button" >
-                                Decline
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Accept
-                            </div>
-                            <div class = "button" data-type = "button" >
-                                Decline
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Accept
-                            </div>
-                            <div class = "button" data-type = "button" >
-                                Decline
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class = "pagination">
-                <a href="#" class = "hover">
-                    1
-                </a>
-                <a href="#">
-                    2
-                </a>
-                <a href="#">
-                    3
-                </a>
-                <a href="#">
-                    4
-                </a>
-            </div>
-            </div>
-            <div class = "slide archived">
-            <div class = "addDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Benefits
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "addButton">
-                    Add
-                </div>
-            </div>
-
-            <!--Filters-->
-            <div class = "filters">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 1
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 2
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Filter 3
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "selection">
-                <div class = "right">
-                    <div class = "selectAll" data-status="unchecked"></div>
-                    <div class = "selectAllText" >Select All</div>
-                </div>
-
-                <div class = "left">
-                    <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
-                </div>
-            </div>
-
-            <div class = "profileList">
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod nearExpiry">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Renew
-                            </div>
-                            <div class = "button" data-type = "button" data-button_type = "claims">
-                                View claim History
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod nearExpiry">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Renew
-                            </div>
-                            <div class = "button" data-type = "button" data-button_type = "claims">
-                                View claim History
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod nearExpiry">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Renew
-                            </div>
-                            <div class = "button" data-type = "button" data-button_type = "claims">
-                                View claim History
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "profile">
-                    <div class = "profileLeft">
-                        <div class = "profileImage">
-                            <img src="assets/images/profileImage_09.png" alt=""/>
-                            <div class = "profileCheck" data-status="unchecked"></div>
-                        </div>
-
-                        <div class = "profileDetails">
-                            <p class = "profileName">
-                                Ravinder Kiran Kumar
-                            </p>
-                            <p class = "insNum">
-                                <b>Insurance  No:</b>ND347809KH678
-                            </p>
-                            <p class = "carModel">
-                                Toyota Altis 2010
-                            </p>
-                            <div class = "profilePeriod nearExpiry">
-                                <p>Insurance Period:</p>
-                                <p>March 06/2013 - March 05/2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "profileRight">
-                        <div class = "pointBox">
-                            Points
-                            <p>24</p>
-                        </div>
-                        <div class = "buttonHolder">
-                            <div class = "button" data-type = "button" >
-                                Renew
-                            </div>
-                            <div class = "button" data-type = "button" data-button_type = "claims">
-                                View claim History
-                            </div>
-                        </div>
-
-                        <div class = "avgScore">
-                            <div class = "score">06</div>
-                            <div class = "title">Average Driver Score December 2013</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class = "pagination">
-                <a href="#" class = "hover">
-                    1
-                </a>
-                <a href="#">
-                    2
-                </a>
-                <a href="#">
-                    3
-                </a>
-                <a href="#">
-                    4
-                </a>
-            </div>
-            </div>
-        </div>
-
-        <!--Right Section-->
-        <div class = "section sectionRight">
-            <div class = "points">
-                <div class = "headers">
-                    Points
-                    <img src="assets/images/settingsGear_08.png" alt=""/>
-                </div>
-                <div class = "content">
-                    <div class = "distance">
-                        3 Months / 300Kms
-                    </div>
-                    <div class = "pnts">
-                        15 Points
-                    </div>
-                </div>
-            </div>
-
-            <div class = "points">
-                <div class = "headers">
-                    Notifications 1
-                    <img src="assets/images/settingsGear_08.png" data-type = "button" data-button_type = "notif" alt=""/>
-                </div>
-                <div class = "content">
-                    <div class = "distance">
-                        6 Incorrect Gears
-                    </div>
-                    <div class = "pnts">
-                        Please watch your
-                    </div>
-                </div>
-            </div>
-
-            <div class = "points">
-                <div class = "headers">
-                    Notifications 2
-                    <img src="assets/images/settingsGear_08.png" data-type = "button" data-button_type = "notif" alt=""/>
-                </div>
-                <div class = "content">
-                    <div class = "distance">
-                        6 hard Breaking
-                    </div>
-                    <div class = "pnts">
-                        Please watch your
-                    </div>
-                </div>
-            </div>
-
-            <div class = "addNew" data-type = "button" data-button_type = "notif">
-                Add New
-            </div>
-        </div>
-
-        <!--Screen-->
-        <div class = "mainScreen"></div>
-
-        <!--Pop Ups-->
-        <!--Notification 1-->
-        <div class = "notification notif">
-            <div class = "close">
-                <span data-type = "close">X</span>
-            </div>
-            <h3>Notification 1</h3>
-            <div class = "whiteDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            All Vehicles
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "filters">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Incorrect Gears
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            6
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            1 Day
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-            <div class = "messageDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            Message
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "buttonsHolder">
-                <div class = "button">SAVE</div>
-                <div class = "button" data-type="close">CANCEL</div>
-            </div>
-        </div>
-        <!--Auto 1-->
-        <div class = "notification auto">
-            <div class = "close">
-                <span data-type = "close">X</span>
-            </div>
-            <h3>Add Auto Points 1</h3>
-            <div class = "whiteDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            All Vehicles
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "filters">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            3 Months
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            300 Kms
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            15 Points
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/grayDrop_08.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "buttonsHolder">
-                <div class = "button">SAVE</div>
-                <div class = "button" data-type="close">CANCEL</div>
-            </div>
-        </div>
-        <!--Claims-->
-        <div class = "notification claims">
-            <div class = "close">
-                <span data-type = "close">X</span>
-            </div>
-            <h3>Ravinder Kiran Kumar</h3>
-            <div class = "proDetails">
-                <div class = "insNumber">
-                    <b>Insurance No:</b> ND347890KH678
-                </div>
-                <div class = "insPeriod">
-                    <b>Insurance Period:</b>
                     <p>March 06/2013 - March 05/2014</p>
                 </div>
-                <div class = "carModel">
-                    Toyota Altis 2010
-                </div>
-                <div class = "claimHeader">
-                    Claims List
-                </div>
-            </div>
-            <div class = "grayDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            2013 - 2014
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/whiteDrop_06.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "claimRecords">
-                <ul>
-                    <li class = "unclaimed">
-                        <img src="assets/images/checkImage_09.png" alt=""/> Vehicle Check up camp <span class = "valid">Valid on 14.01.2014</span>
-                    </li>
-                    <li class = "unclaimed">
-                        <img src="assets/images/checkImage_09.png" alt=""/> Free Oil Change<span class = "valid">Valid till 21.03.2014</span>
-                    </li>
-                    <li class = "claimed">
-                        <img src="assets/images/checkImage_09.png" alt=""/> Free car Interior Cleaning<span class = "valid">Claimed on 09.04.2013</span>
-                    </li>
-                    <li class = "claimed">
-                        <img src="assets/images/checkImage_09.png" alt=""/> Free Body Shine at 3M<span class = "valid">Claimed on 09.04.2013</span>
-                    </li>
-                    <li class = "claimed">
-                        <img src="assets/images/checkImage_09.png" alt=""/> Free Oil change     <span class = "valid">Claimed on 09.04.2013</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class = "buttonsHolder">
-                <div class = "button">SAVE</div>
-                <div class = "button" data-type="close">CANCEL</div>
             </div>
         </div>
-        <!--Add Benefits-->
-        <div class = "notification benefits">
-            <div class = "close">
-                <span data-type = "close">X</span>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
             </div>
-            <h3>Ravinder Kiran Kumar</h3>
-            <div class = "proDetails">
-                <div class = "insNumber">
-                    <b>Insurance No:</b> ND347890KH678
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
                 </div>
-                <div class = "insPeriod">
-                    <b>Insurance Period:</b>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+
+        <div class="profileScreen">
+            <div class="screenButton">
+                Dropped from Service
+            </div>
+
+            <div class="actions">
+                <a href="#" title="Archive">Archive</a>
+                <a href="#" title="Delete">
+                    <img src="assets/images/deleteIcon_09.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
                     <p>March 06/2013 - March 05/2014</p>
                 </div>
-                <div class = "carModel">
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
                     Toyota Altis 2010
-                </div>
-                <div class = "claimHeader">
-                    Benefits List
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
                 </div>
             </div>
-            <div class = "blueDrop">
-                <div class = "dropDown">
-                    <div class = "selected">
-                        <div class = "item">
-                            2013 - 2014
-                        </div>
-                        <div class = "dropArrow">
-                            <img src="assets/images/whiteDrop_06.png" alt=""/>
-                        </div>
-                    </div>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
                 </div>
             </div>
 
-            <div class = "claimRecords">
-                <ul class = "newListElem">
-                    <li class = "addNew">
-                        <input type="text" placeholder="Add New Benefit"/>
-                        <span class = "addButton">ADD</span>
-                    </li>
-                    <li class = "claimed">
-                        Free car Interior Cleaning <span class = "removeItem">x</span>
-                    </li>
-                    <li class = "claimed">
-                        Free Body Shine at 3M <span class = "removeItem">x</span>
-                    </li>
-                    <li class = "claimed">
-                        Free Oil change <span class = "removeItem">x</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class = "buttonsHolder">
-                <div class = "button add">ADD</div>
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="pagination">
+    <a href="#" class="hover">
+        1
+    </a>
+    <a href="#">
+        2
+    </a>
+    <a href="#">
+        3
+    </a>
+    <a href="#">
+        4
+    </a>
+</div>
+</div>
+<div class="slide insuranceExpiry">
+<div class="addDrop">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Benefits
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="addButton">
+        Add
+    </div>
+</div>
+
+<!--Filters-->
+<div class="filters">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 1
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 2
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 3
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div class="selection">
+    <div class="right">
+        <div class="selectAll" data-status="unchecked"></div>
+        <div class="selectAllText">Select All</div>
+    </div>
+
+    <div class="left">
+        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
+    </div>
+</div>
+
+<div class="profileList">
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+
+        <!--<div class = "profileScreen">-->
+        <!--<div class = "screenButton">-->
+        <!--Dropped from Service-->
+        <!--</div>-->
+
+        <!--<div class = "actions">-->
+        <!--<a href="#" title="Archive">Archive</a>-->
+        <!--<a href="#" title="Delete">-->
+        <!--<img src="assets/images/deleteIcon_09.png" alt=""/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <a href="#" class="hover">
+        1
+    </a>
+    <a href="#">
+        2
+    </a>
+    <a href="#">
+        3
+    </a>
+    <a href="#">
+        4
+    </a>
+</div>
+</div>
+<div class="slide accidents">
+<div class="addDrop">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Benefits
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="addButton">
+        Add
+    </div>
+</div>
+
+<!--Filters-->
+<div class="filters">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 1
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 2
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 3
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div class="selection">
+    <div class="right">
+        <div class="selectAll" data-status="unchecked"></div>
+        <div class="selectAllText">Select All</div>
+    </div>
+
+    <div class="left">
+        <!--<a href="#">Reports </a>| <a href="#">Show Driver Trends</a>-->
+    </div>
+</div>
+
+<div class="profileList">
+    <div class="profile dashed">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile dashed">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+
+        <!--<div class = "profileScreen">-->
+        <!--<div class = "screenButton">-->
+        <!--Dropped from Service-->
+        <!--</div>-->
+
+        <!--<div class = "actions">-->
+        <!--<a href="#" title="Archive">Archive</a>-->
+        <!--<a href="#" title="Delete">-->
+        <!--<img src="assets/images/deleteIcon_09.png" alt=""/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="profile dashed">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile dashed">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button" data-button_type="benefits">
+                    Add Bonus/Benefit
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <a href="#" class="hover">
+        1
+    </a>
+    <a href="#">
+        2
+    </a>
+    <a href="#">
+        3
+    </a>
+    <a href="#">
+        4
+    </a>
+</div>
+</div>
+<div class="slide appsign">
+<div class="addDrop">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Benefits
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="addButton">
+        Add
+    </div>
+</div>
+
+<!--Filters-->
+<div class="filters">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 1
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 2
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 3
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div class="selection">
+    <div class="right">
+        <div class="selectAll" data-status="unchecked"></div>
+        <div class="selectAllText">Select All</div>
+    </div>
+
+    <div class="left">
+        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
+    </div>
+</div>
+
+<div class="profileList">
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Accept
+                </div>
+                <div class="button" data-type="button">
+                    Decline
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Accept
+                </div>
+                <div class="button" data-type="button">
+                    Decline
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Accept
+                </div>
+                <div class="button" data-type="button">
+                    Decline
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Accept
+                </div>
+                <div class="button" data-type="button">
+                    Decline
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <a href="#" class="hover">
+        1
+    </a>
+    <a href="#">
+        2
+    </a>
+    <a href="#">
+        3
+    </a>
+    <a href="#">
+        4
+    </a>
+</div>
+</div>
+<div class="slide archived">
+<div class="addDrop">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Benefits
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="addButton">
+        Add
+    </div>
+</div>
+
+<!--Filters-->
+<div class="filters">
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 1
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 2
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="dropDown">
+        <div class="selected">
+            <div class="item">
+                Filter 3
+            </div>
+            <div class="dropArrow">
+                <img src="assets/images/grayDrop_08.png" alt=""/>
+            </div>
+        </div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</div>
+
+<div class="selection">
+    <div class="right">
+        <div class="selectAll" data-status="unchecked"></div>
+        <div class="selectAllText">Select All</div>
+    </div>
+
+    <div class="left">
+        <a href="#">Reports </a>| <a href="#">Show Driver Trends</a>
+    </div>
+</div>
+
+<div class="profileList">
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Renew
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Renew
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Renew
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profileLeft">
+            <div class="profileImage">
+                <img src="assets/images/profileImage_09.png" alt=""/>
+
+                <div class="profileCheck" data-status="unchecked"></div>
+            </div>
+
+            <div class="profileDetails">
+                <p class="profileName">
+                    Ravinder Kiran Kumar
+                </p>
+
+                <p class="insNum">
+                    <b>Insurance No:</b>ND347809KH678
+                </p>
+
+                <p class="carModel">
+                    Toyota Altis 2010
+                </p>
+
+                <div class="profilePeriod nearExpiry">
+                    <p>Insurance Period:</p>
+
+                    <p>March 06/2013 - March 05/2014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileRight">
+            <div class="pointBox">
+                Points
+                <p>24</p>
+            </div>
+            <div class="buttonHolder">
+                <div class="button" data-type="button">
+                    Renew
+                </div>
+                <div class="button" data-type="button" data-button_type="claims">
+                    View claim History
+                </div>
+            </div>
+
+            <div class="avgScore">
+                <div class="score">06</div>
+                <div class="title">Average Driver Score December 2013</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <a href="#" class="hover">
+        1
+    </a>
+    <a href="#">
+        2
+    </a>
+    <a href="#">
+        3
+    </a>
+    <a href="#">
+        4
+    </a>
+</div>
+</div>
+<div class="slide settings">
+    <div class="sliderHolder">
+        <div class="slideHolder">
+            <div class="slider sliderOne" ></div>
+        </div>
+        <div class="slideHolder">
+            <div class="slider sliderTwo"></div>
+        </div>
+        <div class="slideHolder">
+            <div class="slider sliderThree"></div>
+        </div>
+        <div class="slideHolder">
+            <div class="slider sliderFour"></div>
+        </div>
+    </div>
+    <div class = "buttonHolder">
+        <div class = "addNewSlider">
+            Add
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Right Section-->
+<div class="section sectionRight">
+    <div class="points">
+        <div class="headers">
+            Points
+            <img src="assets/images/settingsGear_08.png" alt=""/>
+        </div>
+        <div class="content">
+            <div class="distance">
+                3 Months / 300Kms
+            </div>
+            <div class="pnts">
+                15 Points
+            </div>
+        </div>
+    </div>
+
+    <div class="points">
+        <div class="headers">
+            Notifications 1
+            <img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>
+        </div>
+        <div class="content">
+            <div class="distance">
+                6 Incorrect Gears
+            </div>
+            <div class="pnts">
+                Please watch your
+            </div>
+        </div>
+    </div>
+
+    <div class="points">
+        <div class="headers">
+            Notifications 2
+            <img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>
+        </div>
+        <div class="content">
+            <div class="distance">
+                6 hard Breaking
+            </div>
+            <div class="pnts">
+                Please watch your
+            </div>
+        </div>
+    </div>
+
+    <div class="addNew" data-type="button" data-button_type="notif">
+        Add New
+    </div>
+</div>
+
+<!--Screen-->
+<div class="mainScreen"></div>
+
+<!--Pop Ups-->
+<!--Notification 1-->
+<div class="notification notif">
+    <div class="close">
+        <span data-type="close">X</span>
+    </div>
+    <h3>Notification 1</h3>
+
+    <div class="whiteDrop">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    All Vehicles
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    Incorrect Gears
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    6
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    1 Day
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="messageDrop">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    Message
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="buttonsHolder">
+        <div class="button">SAVE</div>
+        <div class="button" data-type="close">CANCEL</div>
+    </div>
+</div>
+<!--Auto 1-->
+<div class="notification auto">
+    <div class="close">
+        <span data-type="close">X</span>
+    </div>
+    <h3>Add Auto Points 1</h3>
+
+    <div class="whiteDrop">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    All Vehicles
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    3 Months
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    300 Kms
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    15 Points
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/grayDrop_08.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="buttonsHolder">
+        <div class="button">SAVE</div>
+        <div class="button" data-type="close">CANCEL</div>
+    </div>
+</div>
+<!--Claims-->
+<div class="notification claims">
+    <div class="close">
+        <span data-type="close">X</span>
+    </div>
+    <h3>Ravinder Kiran Kumar</h3>
+
+    <div class="proDetails">
+        <div class="insNumber">
+            <b>Insurance No:</b> ND347890KH678
+        </div>
+        <div class="insPeriod">
+            <b>Insurance Period:</b>
+
+            <p>March 06/2013 - March 05/2014</p>
+        </div>
+        <div class="carModel">
+            Toyota Altis 2010
+        </div>
+        <div class="claimHeader">
+            Claims List
+        </div>
+    </div>
+    <div class="grayDrop">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    2013 - 2014
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/whiteDrop_06.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="claimRecords">
+        <ul>
+            <li class="unclaimed">
+                <img src="assets/images/checkImage_09.png" alt=""/> Vehicle Check up camp <span class="valid">Valid on 14.01.2014</span>
+            </li>
+            <li class="unclaimed">
+                <img src="assets/images/checkImage_09.png" alt=""/> Free Oil Change<span class="valid">Valid till 21.03.2014</span>
+            </li>
+            <li class="claimed">
+                <img src="assets/images/checkImage_09.png" alt=""/> Free car Interior Cleaning<span class="valid">Claimed on 09.04.2013</span>
+            </li>
+            <li class="claimed">
+                <img src="assets/images/checkImage_09.png" alt=""/> Free Body Shine at 3M<span class="valid">Claimed on 09.04.2013</span>
+            </li>
+            <li class="claimed">
+                <img src="assets/images/checkImage_09.png" alt=""/> Free Oil change <span class="valid">Claimed on 09.04.2013</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="buttonsHolder">
+        <div class="button">SAVE</div>
+        <div class="button" data-type="close">CANCEL</div>
+    </div>
+</div>
+<!--Add Benefits-->
+<div class="notification benefits">
+    <div class="close">
+        <span data-type="close">X</span>
+    </div>
+    <h3>Ravinder Kiran Kumar</h3>
+
+    <div class="proDetails">
+        <div class="insNumber">
+            <b>Insurance No:</b> ND347890KH678
+        </div>
+        <div class="insPeriod">
+            <b>Insurance Period:</b>
+
+            <p>March 06/2013 - March 05/2014</p>
+        </div>
+        <div class="carModel">
+            Toyota Altis 2010
+        </div>
+        <div class="claimHeader">
+            Benefits List
+        </div>
+    </div>
+    <div class="blueDrop">
+        <div class="dropDown">
+            <div class="selected">
+                <div class="item">
+                    2013 - 2014
+                </div>
+                <div class="dropArrow">
+                    <img src="assets/images/whiteDrop_06.png" alt=""/>
+                </div>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="claimRecords">
+        <ul class="newListElem">
+            <li class="addNew">
+                <input type="text" placeholder="Add New Benefit"/>
+                <span class="addButton">ADD</span>
+            </li>
+            <li class="claimed">
+                Free car Interior Cleaning <span class="removeItem">x</span>
+            </li>
+            <li class="claimed">
+                Free Body Shine at 3M <span class="removeItem">x</span>
+            </li>
+            <li class="claimed">
+                Free Oil change <span class="removeItem">x</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="buttonsHolder">
+        <div class="button add">ADD</div>
+    </div>
+</div>
+</div>
+</div>
+
 <!--Scripts-->
-<!--<script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>-->
-<script type="text/javascript" src = "assets/scripts/jquery.2.0.3.js"></script>
-<script type="text/javascript" src = "assets/scripts/script.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery.2.0.3.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
 </html>
