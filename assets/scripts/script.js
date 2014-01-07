@@ -57,6 +57,17 @@ var fn = {
                     $('.notification').fadeOut();
                     $('.notification.auto').fadeIn();
                     break;
+                case 'points':
+                    //On the Screen
+//                    $('.mainScreen').fadeIn();
+//                    $('.notification').fadeOut();
+//                    $('.notification.pointsEditor').fadeIn();
+                    $('.sectionLeft').find('.tab').removeClass('hover');
+                    $('.sectionLeft').find('[data-tab_type="settings"]').addClass('hover');
+
+                    $('.sectionMiddle').find('.slide').fadeOut();
+                    $('.sectionMiddle').find('.slide.settings').fadeIn();
+                    break;
             }
         });
     },
@@ -169,36 +180,120 @@ var fn = {
         });
     },
     createSlider:function(){
-        $('.slider').slider({
-            range:"min",
-            min:0,
-            max:10,
-            slide:function(event, ui){
-                $(this).find('a').html(ui.value)
-//                console.log(ui.value);
-            }
+        var counter;
+        var counter1;
+        $('.slider').each(function(key, item){
+            counter1 = $(item).data("slideno");
+            $(this).slider({
+                range:"min",
+                min:0,
+                max:10,
+                value:$(item).data("slide_value"),
+                start:function(event, ui){
+                    counter = $(this).data("slideno");
+                    $(this).find('a').html(ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
+                },
+                slide:function(event, ui){
+                    $(this).find('a').html(ui.value);
+                    $(item).data("slide_value",ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
+                }
+            });
+            $(item).find('a').html($(item).data("slide_value"));
+            $('.wayPoints').find(".titleValue"+counter1).html($(item).data("slide_value")*10+"%");
         });
+
     },
     addSlider:function(){
+        var counter = 5;
         $('.addNewSlider').click(function(){
+            counter++;
             var newSlideHolder = $("<div></div>");
+            var newSlideHolder2 = $("<div></div>");
+            var pointsHolder = $("<div></div>");
+
             newSlideHolder.addClass("slideHolder");
+            newSlideHolder.attr("data-slideid","slide"+counter);
+
+            newSlideHolder2.addClass("slideHolder");
+            newSlideHolder2.attr("data-slideid","slide"+counter);
+
+            pointsHolder.addClass("pnts");
+            pointsHolder.attr("data-slideid","slide"+counter);
+
             var newSlider = $("<div></div>");
             newSlider.addClass("slider");
-            newSlideHolder.append(newSlider);
 
+            var newSlider2 = $("<div></div>");
+            newSlider2.addClass("slider");
+
+            pointsHolder.append('<span class = "titleName">New Item'+counter+'</span> : <span class = "titleValue'+counter+'">0%</span>')
+
+            var sliderName = '<div class = "sliderName">New Item '+counter+'<span class = "removeSlider" data-slideid="slide'+counter+'">Remove</span></div>';
+            var sliderName2 = '<div class = "sliderName">New Item '+counter+'</div>';
+            var titleHolder1 = '<div class = "titleValue">0</div>';
+            var titleHolder2 = '<div class = "titleValue">10</div>';
+
+            //Main Append
+            newSlideHolder.append(sliderName);
+            newSlideHolder.append(titleHolder1);
+            newSlideHolder.append(newSlider);
+            newSlideHolder.append(titleHolder2);
+
+            //Editor Append
+            newSlideHolder2.append(sliderName2);
+            newSlideHolder2.append(titleHolder1);
+            newSlideHolder2.append(newSlider2);
+            newSlideHolder2.append(titleHolder2);
+
+            //Adding Main Slider
             newSlider.slider({
                 range:"min",
                 min:0,
                 max:10,
+                start:function(event, ui){
+                    $(this).find('a').html(ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
+                },
                 slide:function(event, ui){
-                    $(this).find('a').html(ui.value)
-                    console.log(ui.value);
+                    $(this).find('a').html(ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
                 }
             });
 
-            $(newSlideHolder).insertBefore(".slideHolder:eq(0)");
+            //Adding Editor Slider
+            newSlider2.slider({
+                range:"min",
+                min:0,
+                max:10,
+                start:function(event, ui){
+                    $(this).find('a').html(ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
+                },
+                slide:function(event, ui){
+                    $(this).find('a').html(ui.value);
+                    $('.wayPoints').find(".titleValue"+counter).html(ui.value*10+"%");
+                }
+            });
+
+            //Appending Main Slider
+            $(newSlideHolder).insertBefore(".slide.settings .slideHolder:eq(0)").animate({"background":"#ff0"});
+
+            //Appending Editor Slider
+            $(newSlideHolder2).insertBefore(".notification.pointsEditor .slideHolder:eq(0)").animate({"background":"#ff0"});
+            $(newSlideHolder).css({background:"#fff"}).addClass("animated flipInX");
+
+            //Appending Points Holder
+            $(pointsHolder).insertBefore('.wayPoints .pnts:eq(0)');
         });
+    },
+    removeSlide:function(){
+        $(document).on('click','.removeSlider', function(){
+            var slideId = $(this).data("slideid");
+            $('.slide.settings .sliderHolder').find('[data-slideid="'+slideId+'"]').remove();
+            $('.wayPoints').find('[data-slideid="'+slideId+'"]').remove();
+        })
     },
 
     execute: function(){
@@ -212,6 +307,7 @@ var fn = {
         fn.removeItem();
         fn.createSlider();
         fn.addSlider();
+        fn.removeSlide();
     }
 }
 

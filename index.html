@@ -6,6 +6,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='assets/styles/jquery-ui-1.10.3.custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/styles/animate.css' rel='stylesheet' type='text/css'>
     <link href='assets/styles/generic.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -1661,23 +1662,45 @@
 </div>
 </div>
 <div class="slide settings">
+    <div class = "header">
+        <div class = "title">Points</div>
+        <button class = "addNewSlider">Add New</button>
+    </div>
     <div class="sliderHolder">
-        <div class="slideHolder">
-            <div class="slider sliderOne" ></div>
+        <div class="slideHolder" data-slideid="slide1">
+            <div class = "sliderName">Hard Acceleration <span class = "removeSlider">Remove</span></div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderOne" data-slideno = "1" data-slide_value = "2"></div>
+            <div class = "titleValue">10</div>
         </div>
-        <div class="slideHolder">
-            <div class="slider sliderTwo"></div>
+        <div class="slideHolder" data-slideid="slide2">
+            <div class = "sliderName">Hard Breaking <span class = "removeSlider">Remove</span></div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderTwo" data-slideno = "2" data-slide_value = "5"></div>
+            <div class = "titleValue">10</div>
         </div>
-        <div class="slideHolder">
-            <div class="slider sliderThree"></div>
+        <div class="slideHolder" data-slideid="slide3">
+            <div class = "sliderName">Incorrect Gear <span class = "removeSlider">Remove</span></div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderThree" data-slideno = "3" data-slide_value = "3"></div>
+            <div class = "titleValue">10</div>
         </div>
-        <div class="slideHolder">
-            <div class="slider sliderFour"></div>
+        <div class="slideHolder" data-slideid="slide4">
+            <div class = "sliderName">Idle Time <span class = "removeSlider">Remove</span></div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderFour" data-slideno = "4" data-slide_value = "7"></div>
+            <div class = "titleValue">10</div>
+        </div>
+        <div class="slideHolder" data-slideid="slide5">
+            <div class = "sliderName">Fuel Mileage <span class = "removeSlider" >Remove</span></div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderFive" data-slideno = "5" data-slide_value = "8"></div>
+            <div class = "titleValue">10</div>
         </div>
     </div>
     <div class = "buttonHolder">
-        <div class = "addNewSlider">
-            Add
+        <div class = "submitValues">
+            Submit
         </div>
     </div>
 </div>
@@ -1685,54 +1708,63 @@
 
 <!--Right Section-->
 <div class="section sectionRight">
-    <div class="points">
+    <div class="points wayPoints">
         <div class="headers">
             Points
-            <img src="assets/images/settingsGear_08.png" alt=""/>
+            <img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="points" alt=""/>
         </div>
         <div class="content">
-            <div class="distance">
-                3 Months / 300Kms
+            <div class="pnts">
+                <span class = "titleName">Hard Acceleration</span> : <span class = "titleValue1">40%</span>
             </div>
             <div class="pnts">
-                15 Points
+                <span class = "titleName">Hard Braking</span> : <span class = "titleValue2">40%</span>
+            </div>
+            <div class="pnts">
+                <span class = "titleName">Incorrect Gear</span> : <span class = "titleValue3">40%</span>
+            </div>
+            <div class="pnts">
+                <span class = "titleName">Idle Time</span> : <span class = "titleValue4">40%</span>
+            </div>
+            <div class="pnts">
+                <span class = "titleName">Fuel Mileage</span> : <span class = "titleValue5">40%</span>
             </div>
         </div>
     </div>
 
-    <div class="points">
-        <div class="headers">
-            Notifications 1
-            <img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>
-        </div>
-        <div class="content">
-            <div class="distance">
-                6 Incorrect Gears
-            </div>
-            <div class="pnts">
-                Please watch your
-            </div>
-        </div>
-    </div>
+    <!--<div class="points">-->
+        <!--<div class="headers">-->
+            <!--Notifications 1-->
+            <!--<img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="content">-->
+            <!--<div class="distance">-->
+                <!--6 Incorrect Gears-->
+            <!--</div>-->
+            <!--<div class="pnts">-->
+                <!--Please watch your-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="points">
-        <div class="headers">
-            Notifications 2
-            <img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>
-        </div>
-        <div class="content">
-            <div class="distance">
-                6 hard Breaking
-            </div>
-            <div class="pnts">
-                Please watch your
-            </div>
-        </div>
-    </div>
+    <!--<div class="points">-->
+        <!--<div class="headers">-->
+            <!--Notifications 2-->
+            <!--<img src="assets/images/settingsGear_08.png" data-type="button" data-button_type="notif" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="content">-->
+            <!--<div class="distance">-->
+                <!--6 hard Breaking-->
+            <!--</div>-->
+            <!--<div class="pnts">-->
+                <!--Please watch your-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="addNew" data-type="button" data-button_type="notif">
-        Add New
-    </div>
+    <!--<div class="addNew" data-type="button" data-button_type="notif">-->
+        <!--Add New-->
+    <!--</div>-->
 </div>
 
 <!--Screen-->
@@ -2039,6 +2071,48 @@
 
     <div class="buttonsHolder">
         <div class="button add">ADD</div>
+    </div>
+</div>
+<!--Points Editor-->
+<div class="notification pointsEditor">
+    <div class="close">
+        <span data-type="close">X</span>
+    </div>
+    <h3>Edit Points</h3>
+    <div class="sliderHolder">
+        <div class="slideHolder">
+            <div class = "sliderName">Hard Acceleration</div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderOne" ></div>
+            <div class = "titleValue">10</div>
+        </div>
+        <div class="slideHolder">
+            <div class = "sliderName">Hard Breaking</div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderTwo"></div>
+            <div class = "titleValue">10</div>
+        </div>
+        <div class="slideHolder">
+            <div class = "sliderName">Incorrect Gear</div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderThree"></div>
+            <div class = "titleValue">10</div>
+        </div>
+        <div class="slideHolder">
+            <div class = "sliderName">Idle Time</div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderFour"></div>
+            <div class = "titleValue">10</div>
+        </div>
+        <div class="slideHolder">
+            <div class = "sliderName">Fuel Mileage</div>
+            <div class = "titleValue">0</div>
+            <div class="slider sliderFive"></div>
+            <div class = "titleValue">10</div>
+        </div>
+    </div>
+    <div class="buttonsHolder">
+        <div class="button update">Update</div>
     </div>
 </div>
 </div>

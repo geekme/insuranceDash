@@ -210,7 +210,7 @@ body{
 #mainWrapper .mainContainer .sectionMiddle .slide.notifiTab {
     background: none repeat scroll 0 0 #FFFFFF;
     border-top: 1px solid rgba(0, 0, 0, 0);
-    /*display: block;*/
+    display: block;
     min-height: inherit;
     padding-bottom: 10px;
 }
@@ -226,27 +226,87 @@ body{
 }
 #mainWrapper .mainContainer .sectionMiddle .slide.settings{
     background: #ffffff;
-    display: block;
+    /*display: block;*/
     min-height: inherit;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .header{
+    background: #ffffff;
+    position: relative;
+    height:50px;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .header .title{
+    font-size: 30px;
+    color:#808080;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .header button{
+    width: 150px;
+    border: none;
+    padding: 7px 0px;
+    background: #3498DB;
+    color: #FFFFFF;
+    border-bottom: 2px solid #1c7cac;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .header button:hover{
+    background: #2c78ae;
+    border-bottom: 3px solid #205b80;
 }
 #mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder{
     padding: 10px 0px;
+    text-align: center;
 }
 #mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slider{
     width: 60%;
+    display: inline-block;
+    vertical-align: middle;
     margin: 20px auto;
 }
-#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slider ui-slider-range{
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slider .ui-slider-range{
     background: #3498DB;
 }
 #mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slideHolder{
     padding: 10px 0px;
     border-bottom: 1px solid #808080;
 }
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slideHolder .sliderName{
+    text-align: left;
+    padding: 0px 20px;
+    color:#3498DB;
+    font-weight: 600;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slideHolder .sliderName span{
+    float: right;
+    font-size: 14px;
+    color:#ff0000;
+    cursor: pointer;
+    font-weight: normal;
+    margin-top: 5px;
+}
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .sliderHolder .slideHolder .titleValue{
+    width: 20px;
+    margin: 0px 10px;
+    font-weight: 600;
+    color: #3498DB;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
 #mainWrapper .mainContainer .sectionMiddle .slide.settings .buttonHolder{
     padding: 10px 0px;
 }
-#mainWrapper .mainContainer .sectionMiddle .slide.settings .buttonHolder .addNewSlider{
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .buttonHolder .submitValues{
     width: 98%;
     margin: 0 auto;
     background: #3498DB;
@@ -263,7 +323,7 @@ body{
     -o-transition: 0.5s all;
     transition: 0.5s all;
 }
-#mainWrapper .mainContainer .sectionMiddle .slide.settings .buttonHolder .addNewSlider:hover{
+#mainWrapper .mainContainer .sectionMiddle .slide.settings .buttonHolder .submitValues:hover{
     background: #2c78ae;
     border-bottom: 3px solid #205b80;
 }
@@ -631,8 +691,22 @@ body{
     overflow: hidden;
     text-overflow:ellipsis ;
     white-space: nowrap;
-    background: #b8b8b8;
-    color: #ffffff;
+    background: #d5d5d5;
+    color: #333333;
+    border-bottom: 1px solid #808080;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    /*cursor: pointer;*/
+}
+#mainWrapper .mainContainer .sectionRight .points .content .pnts:last-of-type{
+    border-bottom: none;
+}
+#mainWrapper .mainContainer .sectionRight .points .content .pnts:hover{
+    /*background: #ffffff;*/
+    /*color: #b3b3b3;*/
 }
 #mainWrapper .mainContainer .sectionRight .addNew{
     background: #3498DB;
@@ -949,6 +1023,53 @@ body{
 }
 .notification .button.add:hover{
     background: #2c78ae;
+}
+
+
+.notification .sliderHolder{
+    padding: 10px 0px;
+    text-align: center;
+}
+.notification .sliderHolder .slider{
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px auto;
+}
+.notification .sliderHolder .slider .ui-slider-range{
+    height: 10px;
+    background: #3498DB;
+}
+.notification .sliderHolder .slideHolder{
+    padding: 10px 0px;
+    border-bottom: 1px solid #808080;
+}
+.notification .sliderHolder .slideHolder:last-of-type{
+    border-bottom: none;
+}
+.notification .sliderHolder .slideHolder .sliderName{
+    text-align: left;
+    padding: 0px 20px;
+    color:#3498DB;
+    font-weight: 600;
+    font-size: 16px;
+}
+.notification .sliderHolder .slideHolder .sliderName span{
+    float: right;
+    font-size: 14px;
+    color:#ff0000;
+    cursor: pointer;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.notification .sliderHolder .slideHolder .titleValue{
+    width: 20px;
+    margin: 0px 10px;
+    font-weight: 600;
+    color: #3498DB;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .slider{
