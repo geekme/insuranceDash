@@ -90,7 +90,7 @@ var fn = {
         });
     },
     selectAll:function(){
-        $('.selectAll').click(function(){
+        $('.selectAll').click(function(){   
             var stat = $(this);
             (stat.data("status") == "unchecked")? statusCheck() : statusUncheck();
             function statusCheck(){
