@@ -89,8 +89,9 @@ var fn = {
             function statusUncheck(){stat.css("background","#fff"); stat.data("status","unchecked")}
         });
     },
+
     selectAll:function(){
-        $('.selectAll').click(function(){   
+        $('.selectAll').click(function(){
             var stat = $(this);
             (stat.data("status") == "unchecked")? statusCheck() : statusUncheck();
             function statusCheck(){

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b4f671-8c72-4e9c-bdd4-0ec73aa28779" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/script.js" afterPath="$PROJECT_DIR$/assets/scripts/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="insuranceDash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +67,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="44" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.48251748" vertical-offset="1254" max-vertical-offset="5389">
+            <state line="92" column="25" selection-start="3305" selection-end="3305" vertical-scroll-proportion="0.48251748" vertical-offset="1254" max-vertical-offset="5406">
               <folding />
             </state>
           </provider>
@@ -525,7 +525,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="44" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.48251748" vertical-offset="1254" max-vertical-offset="5389">
+        <state line="92" column="25" selection-start="3305" selection-end="3305" vertical-scroll-proportion="0.48251748" vertical-offset="1254" max-vertical-offset="5406">
           <folding />
         </state>
       </provider>
